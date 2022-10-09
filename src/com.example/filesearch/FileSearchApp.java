@@ -64,7 +64,6 @@ public class FileSearchApp {
 	}
 	
 	private void walkDirectoryJava8(String path) throws IOException {
-		// TODO Auto-generated method stub
 		Files.walk(Paths.get(path))
 		    .forEach(f -> processFile(f.toFile()));
 	}
